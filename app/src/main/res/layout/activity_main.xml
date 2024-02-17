@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:text="XOX oyunu"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/skorX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_marginTop="323dp"
+        android:layout_marginEnd="60dp"
+        android:text="Skor = X: 0  "
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/gridLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="64dp"
+        android:background="@color/white"
+        android:columnCount="3"
+
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text=""
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/b8"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/b9"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp" />
+
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/skorO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="323dp"
+        android:text="Skor =  O: 0  "
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/gridLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
