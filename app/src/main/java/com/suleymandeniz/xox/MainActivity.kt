@@ -16,6 +16,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         TV = ActivityMainBinding.inflate(layoutInflater)
         setContentView(TV.root)
+        TV.buttonhile.setOnClickListener {
+
+            alert("X")
+        }
         TV.b1.setOnClickListener{
             butonlar(TV.b1)
         }
